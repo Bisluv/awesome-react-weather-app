@@ -1,10 +1,13 @@
+import React from "react";
 import "./App.css";
 import Weather from "./Weather.js";
+
 export default function App() {
   return (
     <div className="App">
       <div className="container">
         <Weather defaultCity="Lagos" />
+
         <footer className="creator">
           This project is created by{" "}
           <a
@@ -21,7 +24,12 @@ export default function App() {
             rel="noreferrer"
           >
             open-sourced on GitHub
-          </a>
+          </a> {" "}
+          and{" "}
+          <a 
+          href="https://bisluv-awesome-react-weather-app.netlify.app/" 
+          target="_blank"
+          rel="noopener noreferrer" />
         </footer>
       </div>
     </div>
